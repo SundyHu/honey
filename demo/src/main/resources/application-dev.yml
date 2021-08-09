@@ -1,0 +1,10 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: @artifactId@
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://localhost:8848
+        namespace: public

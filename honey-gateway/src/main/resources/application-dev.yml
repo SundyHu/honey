@@ -1,0 +1,22 @@
+server:
+  port: 5001
+spring:
+  application:
+    name: @artifactId@
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://localhost:8848
+        namespace: public
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: demo-service
+          uri: lb://demo
+          predicates:
+            - Path=/demo/**
+logging:
+  level:
+    root: debug
