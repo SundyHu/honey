@@ -11,6 +11,7 @@
         <module>honey-common</module>
         <module>demo</module>
         <module>honey-gateway</module>
+        <module>comment-service</module>
     </modules>
     <packaging>pom</packaging>
 
