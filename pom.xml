@@ -12,6 +12,8 @@
         <module>demo</module>
         <module>honey-gateway</module>
         <module>comment-service</module>
+        <module>honey-upms</module>
+        <module>honey-oauth2-demo</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -27,6 +29,7 @@
         <fastjson.version>1.2.76</fastjson.version>
         <guava.version>30.1.1-jre</guava.version>
         <mybatis-plus.version>3.4.3.1</mybatis-plus.version>
+        <mysql-connector-java.version>8.0.26</mysql-connector-java.version>
         <java.version>8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -106,6 +109,12 @@
                 <groupId>com.baomidou</groupId>
                 <artifactId>mybatis-plus</artifactId>
                 <version>${mybatis-plus.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql-connector-java.version}</version>
             </dependency>
 
             <dependency>
